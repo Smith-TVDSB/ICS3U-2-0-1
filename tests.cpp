@@ -13,40 +13,15 @@
 
 TEST_CASE("Ex1", "[example]")
 {
-    REQUIRE(add(51,28) == 79);
-    REQUIRE(add(-4, 6) == 2);
-    REQUIRE(add(-5000, 11) == -4989);
-    REQUIRE(add(-4, -5) == -9);
+    REQUIRE(replace("Hello World", "Hello", "Bye") == "Bye World");
+    REQUIRE(replace("This is a sentence", "sentence", "phrase") == "This is a phrase");
+    REQUIRE(replace("I like to sleep outside", "like", "hate") == "I hate to sleep outside");
+    REQUIRE(replace("Hello World", "Greetings", "Bye") == "Hello World")
+        
 }
 
 // =====================
 // tests for exercise 2
 // ---------------------
 
-TEST_CASE("Ex2", "[example]")
-{
-    REQUIRE(remainder (203,5) == 3);
-    REQUIRE(remainder (17, 3) == 2);
-    REQUIRE(remainder (4, 2) == 0);
-    REQUIRE(remainder(2, 4) == 2);
-}
 
-// =====================
-// tests for exercise 3
-// ---------------------
-
-TEST_CASE("Ex3", "[example]")
-{
-    REQUIRE(circumference(13.2) == Approx(82.93797f).margin(1));
-    REQUIRE(circumference(2) == Approx(12.56636f).margin(1));
-}
-
-// =====================
-// tests for exercise 4
-// ---------------------
-
-TEST_CASE("Ex4", "concatenation")
-{
-    REQUIRE(concat("Tim", 'J', "Lee")== "Tim J. Lee");
-    REQUIRE(concat("Clarke", 'S', "Lambton") == "Clarke S. Lambton");
-}
