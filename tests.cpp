@@ -16,7 +16,6 @@ TEST_CASE("Ex1", "[example]")
     REQUIRE(replace("Hello World", "Hello", "Bye") == "Bye World");
     REQUIRE(replace("This is a sentence", "sentence", "phrase") == "This is a phrase");
     REQUIRE(replace("I like to sleep outside", "like", "hate") == "I hate to sleep outside");
-    REQUIRE(replace("Hello World", "Greetings", "Bye") == "Hello World");
         
 }
 
